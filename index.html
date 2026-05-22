@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Simuladores Web</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Simuladores Interactivos</h1>
+        <p>Lógica Matemática y Física Básica</p>
+    </header>
+
+    <main>
+        <section class="card-3d">
+            <h2>Simulador de Transferencia de Calor</h2>
+            <p class="subtitle">Ley de Enfriamiento de Newton</p>
+            <div class="formula">T = Ts + (T0 - Ts) * e^(-k * t)</div>
+            
+            <form id="form-calor" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="t0">Temperatura Inicial (T0) en °C:</label>
+                    <input type="number" id="t0" value="120" required step="any">
+                </div>
+                
+                <div class="form-group">
+                    <label for="ts">Temperatura del Entorno (Ts) en °C:</label>
+                    <input type="number" id="ts" value="38" required step="any">
+                </div>
+                
+                <div class="form-group">
+                    <label for="k">Constante de Enfriamiento (k):</label>
+                    <input type="number" id="k" value="0.45" required step="any">
+                </div>
+                
+                <div class="form-group">
+                    <label for="t">Tiempo transcurrido (t) en horas:</label>
+                    <input type="number" id="t" value="3" required step="any" min="0">
+                </div>
+                
+                <button type="button" class="btn-3d" onclick="calcularCalor()">Calcular Temperatura</button>
+            </form>
+
+            <div class="result-box" id="resultado-calor">
+                Esperando datos...
+            </div>
+        </section>
+
+        <section class="card-3d">
+            <h2>Calculador de Combinaciones</h2>
+            <p class="subtitle">Caso Sorteo Simultáneo (Grupo 1 y Grupo 2)</p>
+            <div class="formula">C(n, r) = n! / (r! * (n - r)!)</div>
+            
+            <form id="form-combinaciones" onsubmit="return false;">
+                <h3>Grupo 1</h3>
+                <div class="form-group">
+                    <label for="n1">Elementos (n1):</label>
+                    <input type="number" id="n1" value="59" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="r1">Selección (r1):</label>
+                    <input type="number" id="r1" value="5" required min="0">
+                </div>
+
+                <h3>Grupo 2</h3>
+                <div class="form-group">
+                    <label for="n2">Elementos (n2):</label>
+                    <input type="number" id="n2" value="35" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="r2">Selección (r2):</label>
+                    <input type="number" id="r2" value="1" required min="0">
+                </div>
+                
+                <button type="button" class="btn-3d" onclick="calcularCombinaciones()">Calcular Combinaciones Totales</button>
+            </form>
+
+            <div class="result-box" id="resultado-combinaciones">
+                Esperando datos...
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desafío Técnico - Programación Web 2026</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

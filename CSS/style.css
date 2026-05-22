@@ -1,0 +1,173 @@
+/* Configuración General y Paleta de Rosas */
+body {
+    background-color: #ffe6f0; /* Fondo rosa pastel */
+    color: #4a0e2e; /* Texto magenta oscuro formal */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff66a3; /* Rosa fuerte interactivo */
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    border-bottom: 5px solid #ff3385;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto; /* Centrado clásico usando Box Model */
+}
+
+/* Estructuras de Tarjetas con Relieve 3D */
+.card-3d {
+    background-color: #ffffff;
+    border: 3px solid #ff99cc;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 35px;
+    /* Sombras duras superpuestas que dan el efecto volumétrico 3D */
+    box-shadow: 8px 8px 0px #ffb3d1, 15px 15px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #d63384;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    margin: 0 0 15px 0;
+    font-style: italic;
+    color: #8c1d54;
+    font-size: 0.95rem;
+}
+
+.formula {
+    background-color: #fff0f5;
+    padding: 10px;
+    border-left: 5px solid #ff3385;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+h3 {
+    color: #ff3385;
+    border-bottom: 2px dashed #ffb3d1;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Control del Box Model en Formularios */
+.form-group {
+    margin-bottom: 15px;
+    display: block;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffb3d1;
+    border-radius: 10px;
+    box-sizing: border-box; /* Previene desbordamientos de tamaño */
+    font-size: 1rem;
+    background-color: #fff9fb;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff3385;
+    background-color: #ffffff;
+}
+
+/* Botón con Efecto Mecánico Presionable 3D */
+.btn-3d {
+    display: block;
+    width: 100%;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 15px;
+    /* Borde inferior grueso que actúa como base del botón */
+    border-bottom: 5px solid #b30047;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.btn-3d:hover {
+    background-color: #ff4d94;
+}
+
+/* Efecto físico cuando haces clic: el botón se hunde */
+.btn-3d:active {
+    border-bottom: 1px solid #b30047;
+    margin-top: 19px; /* Balancea el espacio por la reducción del borde */
+    margin-bottom: -4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Bloque Estético de Resultados */
+.result-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #fff0f5;
+    border: 2px dashed #ff3385;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #4a0e2e;
+    transition: all 0.2s ease;
+}
+
+/* Efecto Pop interactivo que se activa desde JS al calcular */
+.pop-effect {
+    background-color: #ffccff;
+    border: 2px solid #ff0066;
+    transform: scale(1.03);
+    color: #660022;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #8c1d54;
+    background-color: #ffd6e8;
+    border-top: 2px solid #ffb3d1;
+}
